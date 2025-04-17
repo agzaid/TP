@@ -157,7 +157,7 @@ namespace Application.Services.Implementation
                     oldEmployee.PhoneNumber = obj.PhoneNumber;
                     //oldEmployee.Grad = obj.Grad;
                     oldEmployee.Grad = (Grad?)obj.GradId;
-                    if (obj.Image.Length > 0)
+                    if (obj.Image?.Length > 0)
                     {
                         var image = FileExtensions.ConvertImageToByteArray(obj.Image);
                         oldEmployee.Image = image;

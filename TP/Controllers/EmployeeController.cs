@@ -83,7 +83,7 @@ namespace TP.Controllers
             }
         }
         [Authorize(Roles = "admin")]
-        [HttpPost("UpdateEmployee")]
+        [HttpPut("UpdateEmployee")]
 
         public async Task<IActionResult> Update(EmployeeDto employeeVM)
         {
